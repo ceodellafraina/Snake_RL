@@ -12,8 +12,8 @@ class SnakeEnv(gym.Env):
     def __init__(self):
         super(SnakeEnv, self).__init__()
         # Dimensions of the game field
-        self.width = 600
-        self.height = 400
+        self.width = 1400
+        self.height = 750
         self.cell_size = 20
 
         # Possible actions: [0: UP, 1: DOWN, 2: LEFT, 3: RIGHT]

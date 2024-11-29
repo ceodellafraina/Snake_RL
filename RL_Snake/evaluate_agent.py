@@ -3,7 +3,7 @@ import time
 from snake_env import SnakeEnv
 
 # Load Q-Table
-q_table = np.load("q_table.npy", allow_pickle=True).item()
+q_table = np.load("final.npy", allow_pickle=True).item()
 
 # Discretize state (same as training)
 def discretize_state(state):
@@ -48,7 +48,7 @@ for episode in range(num_episodes):
 
         # Add rendering to visualize the game
         env.render()
-        time.sleep(0.1)  # Delay the update to observe the game
+        time.sleep(0.01)  # Delay the update to observe the game
 
         if done:
             break
